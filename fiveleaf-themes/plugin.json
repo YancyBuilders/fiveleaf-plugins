@@ -1,22 +1,11 @@
 {
   "name": "fiveleaf-themes",
   "displayName": "FiveLeaf Themes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Color themes for the workbench, syntax highlighting and terminal.",
   "enabled": true,
   "contributes": {
     "themes": [
-      {
-        "id": "fiveleaf-themes.fiveleaf",
-        "label": "FiveLeaf",
-        "descriptions": {
-          "en": "FiveLeaf's own, in violet",
-          "zh-Hans": "FiveLeaf 自己的紫色",
-          "ja": "FiveLeaf 自身のバイオレット"
-        },
-        "path": "themes/fiveleaf-light.json",
-        "darkPath": "themes/fiveleaf-dark.json"
-      },
       {
         "id": "fiveleaf-themes.matrix",
         "label": "The Matrix",

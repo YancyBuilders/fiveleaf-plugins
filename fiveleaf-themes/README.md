@@ -1,6 +1,6 @@
 # FiveLeaf Themes
 
-The default theme, `fiveleaf-themes.fiveleaf`, follows the window appearance. Ayu, Claude, Qoder, Grok Bot and Cursor also have light and dark palettes. Each has one picker entry with `path` for the light palette and `darkPath` for the dark one. The other six entries stay dark.
+This plugin adds eleven themes to the built-in FiveLeaf theme. Ayu, Claude, Qoder, Grok Bot and Cursor follow the window appearance. Each has one picker entry with `path` for the light palette and `darkPath` for the dark one. The other six entries stay dark.
 
 ## Color sources
 
@@ -8,7 +8,6 @@ These files contain the colors used by FiveLeaf's original Go palettes, includin
 
 | Theme | Source |
 | --- | --- |
-| FiveLeaf | FiveLeaf's violet accent and paper and charcoal workbench surfaces. |
 | The Matrix | FiveLeaf's interpretation of the film, with steel chrome, green code, a red primary button and blue selections. |
 | Claude | FiveLeaf's adaptation of Claude Code's light and dark terminal colors, including the orange accent and periwinkle selection. |
 | Qoder | Qoder's Forest Light and Forest Dark workbench colors. FiveLeaf draws the syntax colors from the Forest chart series. |
@@ -21,6 +20,6 @@ These files contain the colors used by FiveLeaf's original Go palettes, includin
 
 ## Palette conventions
 
-Colors encode sRGB bytes as `#rrggbb` or `#rrggbbaa`. `colors.fillHover` and `colors.fillPressed` preserve the two primary button states. FiveLeaf and One Dark Pro specify their title bar color. The remaining themes inherit `colors.chrome` for the title bar, including when a custom theme overrides it.
+Colors encode sRGB bytes as `#rrggbb` or `#rrggbbaa`. `colors.fillHover` and `colors.fillPressed` preserve the two primary button states. One Dark Pro specifies its title bar color. The remaining themes inherit `colors.chrome` for the title bar, including when a custom theme overrides it.
 
 All palettes use the shared workbench metrics. Qoder also specifies its card radius, grain and sentence-case headings. Additional syntax roles inherit their parent unless the palette assigns them, as One Dark Pro does for Go and JavaScript.

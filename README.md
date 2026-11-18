@@ -9,7 +9,7 @@ fiveleaf plugin install fiveleaf-icons
 
 | Plugin | Included choices |
 | --- | --- |
-| [FiveLeaf Themes](fiveleaf-themes/) | FiveLeaf, One Dark Pro, Ayu, The Matrix, Claude, Qoder, Grok Bot, Cursor, Purple Gold, Jack-o'-Lantern, Witch's Brew and Blood Moon |
+| [FiveLeaf Themes](fiveleaf-themes/) | One Dark Pro, Ayu, The Matrix, Claude, Qoder, Grok Bot, Cursor, Purple Gold, Jack-o'-Lantern, Witch's Brew and Blood Moon |
 | [FiveLeaf Icons](fiveleaf-icons/) | FiveLeaf, Catppuccin Latte, Catppuccin Mocha, Material, Seti and Ayu |
 
 Choose a color theme or file icon theme under **Settings → Appearance**. FiveLeaf remembers each selection when its plugin is disabled or removed.
