@@ -1,0 +1,27 @@
+{
+  "name": "purple-gold",
+  "displayName": "Purple Gold",
+  "description": "Tyrian purple and gold leaf, with Corona. Dark color theme.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "purple-gold.theme",
+        "label": "Purple Gold",
+        "labels": {
+          "zh-Hans": "紫金",
+          "ja": "パープルゴールド"
+        },
+        "descriptions": {
+          "en": "Tyrian purple and gold leaf, with Corona",
+          "zh-Hans": "泰尔紫与金箔，配 Corona",
+          "ja": "ティリアンパープルと金箔、Corona と"
+        },
+        "path": "themes/purplegold.json",
+        "dark": true
+      }
+    ]
+  }
+}

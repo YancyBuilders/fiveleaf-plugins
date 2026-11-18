@@ -1,0 +1,27 @@
+{
+  "name": "blood-moon",
+  "displayName": "Blood Moon",
+  "description": "Crimson and old gold under a red moon. Dark color theme.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "blood-moon.theme",
+        "label": "Blood Moon",
+        "labels": {
+          "zh-Hans": "血月",
+          "ja": "ブラッドムーン"
+        },
+        "descriptions": {
+          "en": "Crimson and old gold under a red moon",
+          "zh-Hans": "血月下的深红与古金",
+          "ja": "赤い月の下の深紅と古金"
+        },
+        "path": "themes/bloodmoon.json",
+        "dark": true
+      }
+    ]
+  }
+}

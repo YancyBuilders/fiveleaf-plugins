@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="42" viewBox="0 0 202 42"><rect width="202" height="42" rx="5" fill="#282c34"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" x="7" y="7" color="#abb2bf">
+	<path fill="none" stroke="#cdd6f4" stroke-linecap="round" stroke-linejoin="round" d="M4.5 4.5H12c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5H2A1.5 1.5 0 01.5 12V3.5a1 1 0 011-1h5a1 1 0 011 1v1" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" x="46" y="7" color="#abb2bf">
+	<path fill="none" stroke="#74c7ec" stroke-linecap="round" stroke-linejoin="round" d="m15.48 8.06-4.85.48m4.85-.48a4.98 4.98 0 01-4.54 5.42 5 5 0 112.95-8.66l-1.7 1.84a2.5 2.5 0 00-4.18 2.06c.05.57.3 1.1.69 1.51.25.27 1 .83 1.78.82.8-.02 1.58-.25 2.07-.81 0 0 .8-.96.68-1.88M2.5 8.5l-2 .01m1.5 2h1.5m-2-3.99 2-.02" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" x="85" y="7" color="#abb2bf">
+	<g fill="none" stroke="#89b4fa" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M4 1.5h8A2.5 2.5 0 0114.5 4v8a2.5 2.5 0 01-2.5 2.5H4A2.5 2.5 0 011.5 12V4A2.5 2.5 0 014 1.5" />
+		<path d="M12.5 8.75c0-.69-.54-1.25-1.2-1.25h-.6c-.66 0-1.2.56-1.2 1.25S10.04 10 10.7 10h.6c.66 0 1.2.56 1.2 1.25s-.54 1.25-1.2 1.25h-.6c-.66 0-1.2-.56-1.2-1.25m-3-3.75v5M5 7.5h3" />
+	</g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" x="124" y="7" color="#abb2bf">
+	<path fill="none" stroke="#a6e3a1" stroke-linecap="round" stroke-linejoin="round" d="M11.5 6.5v-.17c0-.73-.6-1.33-1.33-1.33H9a1.5 1.5 0 100 3h1a1.5 1.5 0 010 3H9a1.5 1.5 0 01-1.5-1.5M5.5 5v4.5c0 1.5-.08 1.87-.71 2.5-.5.5-1.5.5-1.5.5-.96-.4-1.2-.66-1.79-1v-7L8 .5l6.5 4v7l-6.5 4-2.49-1.53" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" x="163" y="7" color="#abb2bf">
+	<path fill="none" stroke="#74c7ec" stroke-linecap="round" stroke-linejoin="round" d="m9.25 8.25 2.25 2.25 2.25-2.25M3.5 11V5.5l2.04 3 1.96-3V11m4-.5V5M1.65 2.5h12.7c.59 0 1.15.49 1.15 1v9c0 .51-.56 1-1.15 1H1.65c-.59 0-1.15-.49-1.15-1V3.58c0-.5.56-1.08 1.15-1.08" />
+</svg>
+</svg>

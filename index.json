@@ -1,18 +1,172 @@
 [
   {
-    "name": "fiveleaf-themes",
-    "displayName": "FiveLeaf Themes",
-    "description": "Color themes for the workbench, syntax highlighting and terminal, including One Dark Pro and Ayu.",
+    "name": "ayu",
+    "displayName": "Ayu",
+    "description": "Warm amber accents with light and dark palettes. Follows light and dark appearance.",
     "author": "YancyBuilders",
-    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#fiveleaf-themes",
-    "tags": ["themes"]
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#ayu",
+    "tags": [
+      "themes"
+    ]
   },
   {
-    "name": "fiveleaf-icons",
-    "displayName": "FiveLeaf File Icons",
-    "description": "File and folder icons in the FiveLeaf, Catppuccin Latte and Mocha, Material, Seti, and Ayu styles.",
+    "name": "ayu-icons",
+    "displayName": "Ayu Icons",
+    "description": "Ayu artwork for files and folders in FiveLeaf.",
     "author": "YancyBuilders",
-    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#fiveleaf-icons",
-    "tags": ["icon-themes"]
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#ayu-icons",
+    "tags": [
+      "icon-themes"
+    ]
+  },
+  {
+    "name": "blood-moon",
+    "displayName": "Blood Moon",
+    "description": "Crimson and old gold under a red moon. Dark color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#blood-moon",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "catppuccin-latte-icons",
+    "displayName": "Catppuccin Latte Icons",
+    "description": "Catppuccin Latte artwork for files and folders in FiveLeaf.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#catppuccin-latte-icons",
+    "tags": [
+      "icon-themes"
+    ]
+  },
+  {
+    "name": "catppuccin-mocha-icons",
+    "displayName": "Catppuccin Mocha Icons",
+    "description": "Catppuccin Mocha artwork for files and folders in FiveLeaf.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#catppuccin-mocha-icons",
+    "tags": [
+      "icon-themes"
+    ]
+  },
+  {
+    "name": "claude",
+    "displayName": "Claude",
+    "description": "Ivory and near-black, with Claude's orange. Follows light and dark appearance.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#claude",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "cursor",
+    "displayName": "Cursor",
+    "description": "Cursor's greys, with its blue. Follows light and dark appearance.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#cursor",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "fiveleaf-file-icons",
+    "displayName": "FiveLeaf File Icons",
+    "description": "Original FiveLeaf file and folder symbols, tinted by language and color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#fiveleaf-file-icons",
+    "tags": [
+      "icon-themes"
+    ]
+  },
+  {
+    "name": "grok-bot",
+    "displayName": "Grok Bot",
+    "description": "Grok Bot's Sand: monochrome, with its blue. Follows light and dark appearance.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#grok-bot",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "jack-o-lantern",
+    "displayName": "Jack-o'-Lantern",
+    "description": "Pumpkin orange by candlelight. Dark color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#jack-o-lantern",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "material-icons",
+    "displayName": "Material Icon Theme",
+    "description": "Material Icon Theme artwork for files and folders in FiveLeaf.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#material-icons",
+    "tags": [
+      "icon-themes"
+    ]
+  },
+  {
+    "name": "one-dark-pro",
+    "displayName": "One Dark Pro",
+    "description": "Charcoal with vivid blue, green and purple syntax. Dark color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#one-dark-pro",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "purple-gold",
+    "displayName": "Purple Gold",
+    "description": "Tyrian purple and gold leaf, with Corona. Dark color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#purple-gold",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "qoder",
+    "displayName": "Qoder",
+    "description": "Qoder's Forest greens. Follows light and dark appearance.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#qoder",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "seti-icons",
+    "displayName": "Seti Icons",
+    "description": "Seti artwork for files and folders in FiveLeaf.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#seti-icons",
+    "tags": [
+      "icon-themes"
+    ]
+  },
+  {
+    "name": "the-matrix",
+    "displayName": "The Matrix",
+    "description": "Green code in steel, with the White Rabbit. Dark color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#the-matrix",
+    "tags": [
+      "themes"
+    ]
+  },
+  {
+    "name": "witchs-brew",
+    "displayName": "Witch's Brew",
+    "description": "Plum dark, with slime green. Dark color theme.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#witchs-brew",
+    "tags": [
+      "themes"
+    ]
   }
 ]

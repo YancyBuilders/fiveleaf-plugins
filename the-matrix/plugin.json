@@ -1,0 +1,27 @@
+{
+  "name": "the-matrix",
+  "displayName": "The Matrix",
+  "description": "Green code in steel, with the White Rabbit. Dark color theme.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "the-matrix.theme",
+        "label": "The Matrix",
+        "labels": {
+          "zh-Hans": "黑客帝国",
+          "ja": "マトリックス"
+        },
+        "descriptions": {
+          "en": "Green code in steel, with the White Rabbit",
+          "zh-Hans": "钢灰外壳里的绿色代码，伴着白兔",
+          "ja": "鋼色の枠に緑のコード、白ウサギと"
+        },
+        "path": "themes/matrix.json",
+        "dark": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "material-icons",
+  "displayName": "Material Icon Theme",
+  "description": "Material Icon Theme artwork for files and folders in FiveLeaf.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "material-icons.icons",
+        "label": "Material Icon Theme",
+        "path": "assets/theme.json"
+      }
+    ]
+  }
+}

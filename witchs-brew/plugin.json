@@ -1,0 +1,27 @@
+{
+  "name": "witchs-brew",
+  "displayName": "Witch's Brew",
+  "description": "Plum dark, with slime green. Dark color theme.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "witchs-brew.theme",
+        "label": "Witch's Brew",
+        "labels": {
+          "zh-Hans": "女巫魔药",
+          "ja": "魔女の秘薬"
+        },
+        "descriptions": {
+          "en": "Plum dark, with slime green",
+          "zh-Hans": "深紫配黏液绿",
+          "ja": "深い紫にスライムグリーン"
+        },
+        "path": "themes/witchsbrew.json",
+        "dark": true
+      }
+    ]
+  }
+}

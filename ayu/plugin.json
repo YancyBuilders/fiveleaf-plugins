@@ -1,0 +1,23 @@
+{
+  "name": "ayu",
+  "displayName": "Ayu",
+  "description": "Warm amber accents with light and dark palettes. Follows light and dark appearance.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "ayu.theme",
+        "label": "Ayu",
+        "descriptions": {
+          "en": "Warm amber accents with light and dark palettes",
+          "zh-Hans": "暖琥珀色点缀，随外观切换浅色和深色",
+          "ja": "暖かな琥珀色を添えたライトとダークの配色"
+        },
+        "path": "themes/ayu-light.json",
+        "darkPath": "themes/ayu-dark.json"
+      }
+    ]
+  }
+}

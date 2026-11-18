@@ -1,0 +1,23 @@
+{
+  "name": "qoder",
+  "displayName": "Qoder",
+  "description": "Qoder's Forest greens. Follows light and dark appearance.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "qoder.theme",
+        "label": "Qoder",
+        "descriptions": {
+          "en": "Qoder's Forest greens",
+          "zh-Hans": "Qoder 的森林绿",
+          "ja": "Qoder のフォレストグリーン"
+        },
+        "path": "themes/qoder-light.json",
+        "darkPath": "themes/qoder-dark.json"
+      }
+    ]
+  }
+}

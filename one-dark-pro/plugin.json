@@ -1,0 +1,23 @@
+{
+  "name": "one-dark-pro",
+  "displayName": "One Dark Pro",
+  "description": "Charcoal with vivid blue, green and purple syntax. Dark color theme.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "one-dark-pro.theme",
+        "label": "One Dark Pro",
+        "descriptions": {
+          "en": "Charcoal with vivid blue, green and purple syntax",
+          "zh-Hans": "炭灰背景，搭配蓝、绿和紫色语法高亮",
+          "ja": "チャコールの背景に青、緑、紫の構文ハイライト"
+        },
+        "path": "themes/onedarkpro.json",
+        "dark": true
+      }
+    ]
+  }
+}

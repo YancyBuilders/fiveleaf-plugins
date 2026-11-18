@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="404" height="80" viewBox="0 0 404 80" font-family="Menlo,Consolas,monospace" font-size="12">
+<g transform="translate(0 0)">
+<rect width="202" height="80" rx="5" fill="#fdfcfa"/>
+<text x="12" y="24" fill="#4c5ee0">func</text>
+<text x="48" y="24" fill="#b0532f">greet</text>
+<text x="84" y="24" fill="#1a1918">()</text>
+<text x="106" y="24" fill="#0f6e6e">string</text>
+<text x="157" y="24" fill="#1a1918">{</text>
+<text x="28" y="44" fill="#4c5ee0">return</text>
+<text x="79" y="44" fill="#2c7a39">&quot;FiveLeaf&quot;</text>
+<text x="12" y="64" fill="#1a1918">}</text>
+</g>
+<g transform="translate(202 0)">
+<rect width="202" height="80" rx="5" fill="#1a1917"/>
+<text x="12" y="24" fill="#b1b9f9">func</text>
+<text x="48" y="24" fill="#f0a585">greet</text>
+<text x="84" y="24" fill="#ecebe6">()</text>
+<text x="106" y="24" fill="#5fb3a6">string</text>
+<text x="157" y="24" fill="#ecebe6">{</text>
+<text x="28" y="44" fill="#b1b9f9">return</text>
+<text x="79" y="44" fill="#8fcf8f">&quot;FiveLeaf&quot;</text>
+<text x="12" y="64" fill="#ecebe6">}</text>
+</g>
+</svg>

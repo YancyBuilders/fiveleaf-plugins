@@ -1,0 +1,17 @@
+{
+  "name": "catppuccin-latte-icons",
+  "displayName": "Catppuccin Latte Icons",
+  "description": "Catppuccin Latte artwork for files and folders in FiveLeaf.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "catppuccin-latte-icons.icons",
+        "label": "Catppuccin Latte",
+        "path": "assets/theme.json"
+      }
+    ]
+  }
+}

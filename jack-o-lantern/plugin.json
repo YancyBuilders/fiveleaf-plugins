@@ -1,0 +1,27 @@
+{
+  "name": "jack-o-lantern",
+  "displayName": "Jack-o'-Lantern",
+  "description": "Pumpkin orange by candlelight. Dark color theme.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "jack-o-lantern.theme",
+        "label": "Jack-o'-Lantern",
+        "labels": {
+          "zh-Hans": "南瓜灯",
+          "ja": "ジャック・オー・ランタン"
+        },
+        "descriptions": {
+          "en": "Pumpkin orange by candlelight",
+          "zh-Hans": "烛光下的南瓜橙",
+          "ja": "ろうそくの灯りのパンプキンオレンジ"
+        },
+        "path": "themes/pumpkin.json",
+        "dark": true
+      }
+    ]
+  }
+}

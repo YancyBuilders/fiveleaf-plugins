@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="202" height="80" viewBox="0 0 202 80" font-family="Menlo,Consolas,monospace" font-size="12">
+<g transform="translate(0 0)">
+<rect width="202" height="80" rx="5" fill="#1a1512"/>
+<text x="12" y="24" fill="#b88cf0">func</text>
+<text x="48" y="24" fill="#ff9e4a">greet</text>
+<text x="84" y="24" fill="#efe2cf">()</text>
+<text x="106" y="24" fill="#ffc247">string</text>
+<text x="157" y="24" fill="#efe2cf">{</text>
+<text x="28" y="44" fill="#b88cf0">return</text>
+<text x="79" y="44" fill="#a8cf6a">&quot;FiveLeaf&quot;</text>
+<text x="12" y="64" fill="#efe2cf">}</text>
+</g>
+</svg>

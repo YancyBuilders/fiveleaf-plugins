@@ -1,0 +1,23 @@
+{
+  "name": "grok-bot",
+  "displayName": "Grok Bot",
+  "description": "Grok Bot's Sand: monochrome, with its blue. Follows light and dark appearance.",
+  "author": "YancyBuilders",
+  "version": "1.0.0",
+  "enabled": true,
+  "contributes": {
+    "themes": [
+      {
+        "id": "grok-bot.theme",
+        "label": "Grok Bot",
+        "descriptions": {
+          "en": "Grok Bot's Sand: monochrome, with its blue",
+          "zh-Hans": "Grok Bot 的 Sand：黑白，配它的蓝色",
+          "ja": "Grok Bot の Sand：モノクロに青"
+        },
+        "path": "themes/grokbot-light.json",
+        "darkPath": "themes/grokbot-dark.json"
+      }
+    ]
+  }
+}
