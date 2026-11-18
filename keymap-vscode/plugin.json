@@ -1,0 +1,193 @@
+{
+  "name": "keymap-vscode",
+  "displayName": "VS Code Keymap",
+  "version": "1.0.0",
+  "description": "VS Code keyboard shortcuts for FiveLeaf on macOS, Windows and Linux.",
+  "enabled": true,
+  "contributes": {
+    "keymaps": [
+      {
+        "id": "keymap-vscode.preset",
+        "label": "VS Code",
+        "bindings": [
+          {
+            "key": "ctrl+p",
+            "mac": "cmd+p",
+            "command": "go.quickOpen"
+          },
+          {
+            "key": "ctrl+shift+p",
+            "mac": "cmd+shift+p",
+            "command": "go.commands"
+          },
+          {
+            "key": "ctrl+,",
+            "mac": "cmd+,",
+            "command": "file.settings"
+          },
+          {
+            "key": "ctrl+k ctrl+s",
+            "mac": "cmd+k cmd+s",
+            "command": "file.keybindings"
+          },
+          {
+            "key": "ctrl+k s",
+            "mac": "cmd+alt+s",
+            "command": "file.saveAll"
+          },
+          {
+            "key": "ctrl+w",
+            "mac": "cmd+w",
+            "command": "file.close"
+          },
+          {
+            "key": "ctrl+shift+t",
+            "mac": "cmd+shift+t",
+            "command": "file.reopenClosed"
+          },
+          {
+            "key": "ctrl+g",
+            "command": "go.line",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+shift+o",
+            "mac": "cmd+shift+o",
+            "command": "go.symbol",
+            "when": "editorFocus"
+          },
+          {
+            "key": "f12",
+            "command": "go.definition",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+k ctrl+i",
+            "mac": "cmd+k cmd+i",
+            "command": "go.hover",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+f",
+            "mac": "cmd+f",
+            "command": "edit.find"
+          },
+          {
+            "key": "ctrl+h",
+            "mac": "cmd+alt+f",
+            "command": "edit.replace",
+            "when": "!terminalFocus"
+          },
+          {
+            "key": "f3",
+            "mac": "cmd+g",
+            "command": "edit.findNext"
+          },
+          {
+            "key": "shift+f3",
+            "mac": "cmd+shift+g",
+            "command": "edit.findPrev"
+          },
+          {
+            "key": "ctrl+shift+f",
+            "mac": "cmd+shift+f",
+            "command": "edit.findInFiles"
+          },
+          {
+            "key": "ctrl+shift+h",
+            "mac": "cmd+shift+h",
+            "command": "edit.replaceInFiles"
+          },
+          {
+            "key": "ctrl+/",
+            "mac": "cmd+/",
+            "command": "sel.comment",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+k",
+            "mac": "cmd+shift+k",
+            "command": "sel.deleteLine",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+alt+up",
+            "command": "sel.copyUp",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+alt+down",
+            "command": "sel.copyDown",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "alt+up",
+            "command": "sel.moveUp",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "alt+down",
+            "command": "sel.moveDown",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+enter",
+            "mac": "cmd+enter",
+            "command": "sel.lineBelow",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+enter",
+            "mac": "cmd+shift+enter",
+            "command": "sel.lineAbove",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+l",
+            "mac": "cmd+l",
+            "command": "sel.line",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+\\",
+            "mac": "cmd+shift+\\",
+            "command": "go.bracket",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+alt+f",
+            "linux": "ctrl+shift+i",
+            "command": "sel.format",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+b",
+            "mac": "cmd+b",
+            "command": "view.sidebar"
+          },
+          {
+            "key": "ctrl+shift+e",
+            "mac": "cmd+shift+e",
+            "command": "view.explorer"
+          },
+          {
+            "key": "ctrl+`",
+            "command": "view.terminal"
+          },
+          {
+            "key": "ctrl+shift+`",
+            "command": "view.newTerminal"
+          },
+          {
+            "key": "ctrl+tab",
+            "command": "go.nextTab"
+          },
+          {
+            "key": "ctrl+shift+tab",
+            "command": "go.prevTab"
+          }
+        ]
+      }
+    ]
+  }
+}

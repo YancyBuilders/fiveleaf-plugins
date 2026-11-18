@@ -1,0 +1,36 @@
+{
+  "name": "lsp-html",
+  "displayName": "HTML Language Server",
+  "version": "1.0.0",
+  "description": "Language support through vscode-html-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "vscode-html-language-server", "description": "HTML server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "html",
+        "extensions": [
+          ".html",
+          ".htm"
+        ]
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-html.server",
+        "languages": [
+          "html"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ],
+        "initializationOptions": {
+          "provideFormatter": true
+        }
+      }
+    ]
+  }
+}

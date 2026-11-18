@@ -1,0 +1,19 @@
+{
+  "name": "agent-omp",
+  "displayName": "OMP (Oh My Pi) Agent",
+  "version": "1.0.0",
+  "description": "Connect the installed Oh My Pi CLI to FiveLeaf. Set up a provider in OMP before starting a chat.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-omp.acp",
+        "name": "OMP",
+        "command": "omp",
+        "args": [
+          "acp"
+        ]
+      }
+    ]
+  }
+}

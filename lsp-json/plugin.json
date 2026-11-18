@@ -1,0 +1,55 @@
+{
+  "name": "lsp-json",
+  "displayName": "JSON / JSONC Language Server",
+  "version": "1.0.0",
+  "description": "Language support through vscode-json-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "vscode-json-language-server", "description": "JSON server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "jsonc",
+        "extensions": [
+          ".jsonc",
+          ".code-workspace"
+        ],
+        "filenames": [
+          "tsconfig.json",
+          "jsconfig.json"
+        ],
+        "lexer": "json",
+        "lineComment": "//"
+      },
+      {
+        "id": "json",
+        "extensions": [
+          ".json"
+        ],
+        "filenames": [
+          ".babelrc",
+          ".prettierrc",
+          ".eslintrc"
+        ],
+        "lexer": "json"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-json.server",
+        "languages": [
+          "jsonc",
+          "json"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ],
+        "initializationOptions": {
+          "provideFormatter": true
+        }
+      }
+    ]
+  }
+}

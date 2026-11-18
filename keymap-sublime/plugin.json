@@ -1,0 +1,146 @@
+{
+  "name": "keymap-sublime",
+  "displayName": "Sublime Text Keymap",
+  "version": "1.0.0",
+  "description": "Sublime Text keyboard shortcuts for FiveLeaf on macOS, Windows and Linux.",
+  "enabled": true,
+  "contributes": {
+    "keymaps": [
+      {
+        "id": "keymap-sublime.preset",
+        "label": "Sublime Text",
+        "bindings": [
+          {
+            "key": "ctrl+p",
+            "mac": "cmd+p",
+            "command": "go.quickOpen"
+          },
+          {
+            "key": "ctrl+shift+p",
+            "mac": "cmd+shift+p",
+            "command": "go.commands"
+          },
+          {
+            "key": "ctrl+w",
+            "mac": "cmd+w",
+            "command": "file.close"
+          },
+          {
+            "key": "ctrl+shift+t",
+            "mac": "cmd+shift+t",
+            "command": "file.reopenClosed"
+          },
+          {
+            "key": "ctrl+g",
+            "command": "go.line",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+r",
+            "mac": "cmd+r",
+            "command": "go.symbol",
+            "when": "editorFocus"
+          },
+          {
+            "key": "f12",
+            "command": "go.definition",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+f",
+            "mac": "cmd+f",
+            "command": "edit.find"
+          },
+          {
+            "key": "ctrl+h",
+            "mac": "cmd+alt+f",
+            "command": "edit.replace",
+            "when": "!terminalFocus"
+          },
+          {
+            "key": "f3",
+            "mac": "cmd+g",
+            "command": "edit.findNext"
+          },
+          {
+            "key": "shift+f3",
+            "mac": "cmd+shift+g",
+            "command": "edit.findPrev"
+          },
+          {
+            "key": "ctrl+shift+f",
+            "mac": "cmd+shift+f",
+            "command": "edit.findInFiles"
+          },
+          {
+            "key": "ctrl+/",
+            "mac": "cmd+/",
+            "command": "sel.comment",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+d",
+            "mac": "cmd+shift+d",
+            "command": "sel.copyDown",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+k",
+            "mac": "cmd+shift+k",
+            "command": "sel.deleteLine",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+up",
+            "mac": "ctrl+cmd+up",
+            "command": "sel.moveUp",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+down",
+            "mac": "ctrl+cmd+down",
+            "command": "sel.moveDown",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+j",
+            "mac": "cmd+j",
+            "command": "sel.joinLines",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+l",
+            "mac": "cmd+l",
+            "command": "sel.line",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+enter",
+            "mac": "cmd+enter",
+            "command": "sel.lineBelow",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+enter",
+            "mac": "cmd+shift+enter",
+            "command": "sel.lineAbove",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+k ctrl+b",
+            "mac": "cmd+k cmd+b",
+            "command": "view.sidebar"
+          },
+          {
+            "key": "ctrl+tab",
+            "command": "go.nextTab"
+          },
+          {
+            "key": "ctrl+shift+tab",
+            "command": "go.prevTab"
+          }
+        ]
+      }
+    ]
+  }
+}

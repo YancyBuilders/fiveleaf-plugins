@@ -1,0 +1,24 @@
+{
+  "name": "format-ruff",
+  "displayName": "Ruff Formatter",
+  "version": "1.0.0",
+  "description": "Format Python and stub files with Ruff on the workspace machine, using the project's Ruff configuration.",
+  "enabled": false,
+  "contributes": {
+    "languages": [
+      { "id": "python", "extensions": [".py", ".pyi", ".pyw"], "lineComment": "#" }
+    ],
+    "settings": {
+      "command": { "type": "string", "default": "ruff", "description": "Ruff executable on the workspace machine, for example ./.venv/bin/ruff" },
+      "lineLength": { "type": "integer", "minimum": 1, "maximum": 65535, "description": "Override the project's preferred line length. Leave empty to use Ruff's configuration." },
+      "quoteStyle": { "type": "string", "enum": ["single", "double", "preserve"], "description": "Override the project's string quote style. Default uses Ruff's configuration." }
+    },
+    "formatters": [{
+      "id": "format-ruff.format",
+      "languages": ["python"],
+      "command": "${settings.command}",
+      "args": ["format", "--stdin-filename", "${file}", "-"],
+      "settingArgs": { "lineLength": "--line-length=${value}", "quoteStyle": "--config=format.quote-style='${value}'" }
+    }]
+  }
+}

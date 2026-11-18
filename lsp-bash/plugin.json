@@ -1,0 +1,40 @@
+{
+  "name": "lsp-bash",
+  "displayName": "Bash / Shell Language Server",
+  "version": "1.0.0",
+  "description": "Language support through bash-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "bash-language-server", "description": "Bash server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "shellscript",
+        "extensions": [
+          ".sh",
+          ".bash"
+        ],
+        "filenames": [
+          ".bashrc",
+          ".bash_profile",
+          ".profile"
+        ],
+        "lexer": "bash",
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-bash.server",
+        "languages": [
+          "shellscript"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "start"
+        ]
+      }
+    ]
+  }
+}

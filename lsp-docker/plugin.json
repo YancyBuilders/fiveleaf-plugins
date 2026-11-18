@@ -1,0 +1,38 @@
+{
+  "name": "lsp-docker",
+  "displayName": "Dockerfile Language Server",
+  "version": "1.0.0",
+  "description": "Language support through docker-langserver. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "docker-langserver", "description": "Dockerfile server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "dockerfile",
+        "extensions": [
+          ".dockerfile"
+        ],
+        "filenames": [
+          "Dockerfile",
+          "Containerfile"
+        ],
+        "lexer": "docker",
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-docker.server",
+        "languages": [
+          "dockerfile"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ]
+      }
+    ]
+  }
+}

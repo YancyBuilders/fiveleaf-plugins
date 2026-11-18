@@ -1,0 +1,44 @@
+{
+  "name": "lsp-go",
+  "displayName": "Go Language Server",
+  "version": "1.0.0",
+  "description": "Language support through gopls. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "gopls", "description": "gopls executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "go",
+        "extensions": [
+          ".go"
+        ],
+        "lineComment": "//"
+      },
+      {
+        "id": "gomod",
+        "filenames": [
+          "go.mod"
+        ]
+      },
+      {
+        "id": "gowork",
+        "filenames": [
+          "go.work"
+        ]
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-go.server",
+        "languages": [
+          "go",
+          "gomod",
+          "gowork"
+        ],
+        "command": "${settings.command}"
+      }
+    ]
+  }
+}

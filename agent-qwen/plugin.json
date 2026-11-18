@@ -1,0 +1,23 @@
+{
+  "name": "agent-qwen",
+  "displayName": "Qwen Code Agent",
+  "version": "1.1.0",
+  "description": "Connect the installed Qwen Code CLI to FiveLeaf over ACP. Sign in and configure a model in `qwen` before opening a chat.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-qwen.acp",
+        "name": "Qwen Code",
+        "command": "qwen",
+        "args": [
+          "--acp"
+        ],
+        "capabilities": [
+          "code",
+          "reasoning"
+        ]
+      }
+    ]
+  }
+}

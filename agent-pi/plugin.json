@@ -1,0 +1,22 @@
+{
+  "name": "agent-pi",
+  "displayName": "Pi Agent",
+  "version": "1.0.0",
+  "description": "Connect Pi over ACP. Install Node.js and Pi, then configure a provider in Pi. The first connection downloads the pinned pi-acp adapter.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-pi.acp",
+        "name": "Pi",
+        "command": "npx",
+        "args": [
+          "-y",
+          "pi-acp@0.0.34"
+        ],
+        "localCommand": "pi",
+        "localCommandEnv": "PI_ACP_PI_COMMAND"
+      }
+    ]
+  }
+}

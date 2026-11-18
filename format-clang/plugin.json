@@ -1,0 +1,24 @@
+{
+  "name": "format-clang",
+  "displayName": "ClangFormat Formatter",
+  "version": "1.0.0",
+  "description": "Format C and C++ sources and headers with clang-format on the workspace machine, using the project's .clang-format style.",
+  "enabled": false,
+  "contributes": {
+    "languages": [
+      { "id": "c", "extensions": [".c", ".h"], "lineComment": "//" },
+      { "id": "cpp", "extensions": [".cc", ".cpp", ".cxx", ".c++", ".hh", ".hpp", ".hxx", ".h++"], "lineComment": "//" }
+    ],
+    "settings": {
+      "command": { "type": "string", "default": "clang-format", "description": "clang-format executable on the workspace machine" },
+      "fallbackStyle": { "type": "string", "default": "LLVM", "enum": ["LLVM", "Google", "Chromium", "GNU", "Microsoft", "Mozilla", "WebKit"], "description": "Coding style for files without a .clang-format configuration" }
+    },
+    "formatters": [{
+      "id": "format-clang.format",
+      "languages": ["c", "cpp"],
+      "command": "${settings.command}",
+      "args": ["--assume-filename", "${file}"],
+      "settingArgs": { "fallbackStyle": "--fallback-style=${value}" }
+    }]
+  }
+}

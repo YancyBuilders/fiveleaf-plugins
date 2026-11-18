@@ -20,6 +20,17 @@
     ]
   },
   {
+    "name": "lsp-bash",
+    "displayName": "Bash / Shell Language Server",
+    "description": "Language support through bash-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-bash",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
     "name": "blood-moon",
     "displayName": "Blood Moon",
     "description": "Crimson and old gold under a red moon. Dark color theme.",
@@ -27,6 +38,28 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#blood-moon",
     "tags": [
       "themes"
+    ]
+  },
+  {
+    "name": "lsp-clangd",
+    "displayName": "C / C++ Language Server",
+    "description": "Language support through clangd. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-clangd",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "lsp-csharp",
+    "displayName": "C# Language Server",
+    "description": "Language support through csharp-ls. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-csharp",
+    "tags": [
+      "lsp",
+      "language"
     ]
   },
   {
@@ -50,6 +83,16 @@
     ]
   },
   {
+    "name": "format-clang",
+    "displayName": "ClangFormat Formatter",
+    "description": "Format C and C++ sources and headers with clang-format on the workspace machine, using the project's .clang-format style.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#format-clang",
+    "tags": [
+      "formatter"
+    ]
+  },
+  {
     "name": "claude",
     "displayName": "Claude",
     "description": "Ivory and near-black, with Claude's orange. Follows light and dark appearance.",
@@ -57,6 +100,39 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#claude",
     "tags": [
       "themes"
+    ]
+  },
+  {
+    "name": "agent-claude",
+    "displayName": "Claude Agent",
+    "description": "Chat with Claude Code through ACP. Install Node.js and the Claude Code CLI, then sign in with Claude Code. The first connection downloads the adapter.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-claude",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "agent-codex",
+    "displayName": "Codex Agent",
+    "description": "Chat with Codex through ACP. Install Node.js and the Codex CLI, then sign in with Codex. The first connection downloads the adapter.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-codex",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "lsp-css",
+    "displayName": "CSS / SCSS / Less Language Server",
+    "description": "Language support through vscode-css-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-css",
+    "tags": [
+      "lsp",
+      "language"
     ]
   },
   {
@@ -70,6 +146,28 @@
     ]
   },
   {
+    "name": "agent-dsh",
+    "displayName": "DeepSeek TUI (DSH) Agent",
+    "description": "Use the ACP profile of the installed DSH CLI. Configure its model and provider before starting a chat.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-dsh",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "lsp-docker",
+    "displayName": "Dockerfile Language Server",
+    "description": "Language support through docker-langserver. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-docker",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
     "name": "fiveleaf-file-icons",
     "displayName": "FiveLeaf File Icons",
     "description": "Original FiveLeaf file and folder symbols, tinted by language and color theme.",
@@ -77,6 +175,28 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#fiveleaf-file-icons",
     "tags": [
       "icon-themes"
+    ]
+  },
+  {
+    "name": "agent-gemini",
+    "displayName": "Gemini CLI Agent",
+    "description": "Connect the installed Gemini CLI to FiveLeaf over ACP. Sign in and configure a model in Gemini before opening a chat.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-gemini",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "lsp-go",
+    "displayName": "Go Language Server",
+    "description": "Language support through gopls. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-go",
+    "tags": [
+      "lsp",
+      "language"
     ]
   },
   {
@@ -90,6 +210,17 @@
     ]
   },
   {
+    "name": "lsp-html",
+    "displayName": "HTML Language Server",
+    "description": "Language support through vscode-html-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-html",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
     "name": "jack-o-lantern",
     "displayName": "Jack-o'-Lantern",
     "description": "Pumpkin orange by candlelight. Dark color theme.",
@@ -97,6 +228,71 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#jack-o-lantern",
     "tags": [
       "themes"
+    ]
+  },
+  {
+    "name": "lsp-java",
+    "displayName": "Java Language Server",
+    "description": "Language support through jdtls. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-java",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "keymap-jetbrains",
+    "displayName": "JetBrains Keymap",
+    "description": "JetBrains keyboard shortcuts for FiveLeaf on macOS, Windows and Linux.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#keymap-jetbrains",
+    "tags": [
+      "keymap"
+    ]
+  },
+  {
+    "name": "lsp-json",
+    "displayName": "JSON / JSONC Language Server",
+    "description": "Language support through vscode-json-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-json",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "agent-kimi",
+    "displayName": "Kimi Code Agent",
+    "description": "Connect the installed Kimi Code CLI to FiveLeaf over ACP. Sign in and configure a model in `kimi` before opening a chat.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-kimi",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "lsp-lua",
+    "displayName": "Lua Language Server",
+    "description": "Language support through lua-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-lua",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "lsp-markdown",
+    "displayName": "Markdown Language Server",
+    "description": "Language support through marksman. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-markdown",
+    "tags": [
+      "lsp",
+      "language"
     ]
   },
   {
@@ -110,6 +306,17 @@
     ]
   },
   {
+    "name": "agent-omp",
+    "displayName": "OMP (Oh My Pi) Agent",
+    "description": "Connect the installed Oh My Pi CLI to FiveLeaf. Set up a provider in OMP before starting a chat.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-omp",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
     "name": "one-dark-pro",
     "displayName": "One Dark Pro",
     "description": "Charcoal with vivid blue, green and purple syntax. Dark color theme.",
@@ -117,6 +324,49 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#one-dark-pro",
     "tags": [
       "themes"
+    ]
+  },
+  {
+    "name": "agent-opencode",
+    "displayName": "OpenCode Agent",
+    "description": "Chat with OpenCode through ACP. Requires an installed OpenCode CLI on PATH. Run opencode to connect a provider and choose a model before connecting.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-opencode",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "lsp-php",
+    "displayName": "PHP Language Server",
+    "description": "Language support through intelephense. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-php",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "agent-pi",
+    "displayName": "Pi Agent",
+    "description": "Connect Pi over ACP. Install Node.js and Pi, then configure a provider in Pi. The first connection downloads the pinned pi-acp adapter.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-pi",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "format-prettier",
+    "displayName": "Prettier Formatter",
+    "description": "Format JavaScript, TypeScript, JSX, TSX, Vue, styles, HTML, JSON, YAML and Markdown with Prettier on the workspace machine.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#format-prettier",
+    "tags": [
+      "formatter"
     ]
   },
   {
@@ -130,6 +380,17 @@
     ]
   },
   {
+    "name": "lsp-python",
+    "displayName": "Python Language Server",
+    "description": "Language support through pyright-langserver. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-python",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
     "name": "qoder",
     "displayName": "Qoder",
     "description": "Qoder's Forest greens. Follows light and dark appearance.",
@@ -137,6 +398,49 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#qoder",
     "tags": [
       "themes"
+    ]
+  },
+  {
+    "name": "agent-qwen",
+    "displayName": "Qwen Code Agent",
+    "description": "Connect the installed Qwen Code CLI to FiveLeaf over ACP. Sign in and configure a model in `qwen` before opening a chat.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#agent-qwen",
+    "tags": [
+      "agent",
+      "acp"
+    ]
+  },
+  {
+    "name": "lsp-ruby",
+    "displayName": "Ruby Language Server",
+    "description": "Language support through ruby-lsp. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-ruby",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "format-ruff",
+    "displayName": "Ruff Formatter",
+    "description": "Format Python and stub files with Ruff on the workspace machine, using the project's Ruff configuration.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#format-ruff",
+    "tags": [
+      "formatter"
+    ]
+  },
+  {
+    "name": "lsp-rust",
+    "displayName": "Rust Language Server",
+    "description": "Language support through rust-analyzer. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-rust",
+    "tags": [
+      "lsp",
+      "language"
     ]
   },
   {
@@ -150,6 +454,38 @@
     ]
   },
   {
+    "name": "keymap-sublime",
+    "displayName": "Sublime Text Keymap",
+    "description": "Sublime Text keyboard shortcuts for FiveLeaf on macOS, Windows and Linux.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#keymap-sublime",
+    "tags": [
+      "keymap"
+    ]
+  },
+  {
+    "name": "lsp-svelte",
+    "displayName": "Svelte Language Server",
+    "description": "Language support through svelteserver. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-svelte",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "lsp-terraform",
+    "displayName": "Terraform Language Server",
+    "description": "Language support through terraform-ls. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-terraform",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
     "name": "the-matrix",
     "displayName": "The Matrix",
     "description": "Green code in steel, with the White Rabbit. Dark color theme.",
@@ -160,6 +496,59 @@
     ]
   },
   {
+    "name": "todos",
+    "displayName": "TODOs",
+    "description": "The TODO, FIXME and HACK comments of the folder, in the sidebar",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#todos",
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "name": "lsp-toml",
+    "displayName": "TOML Language Server",
+    "description": "Language support through taplo. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-toml",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "lsp-typescript",
+    "displayName": "TypeScript / JavaScript Language Server",
+    "description": "Language support through typescript-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-typescript",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
+    "name": "keymap-vscode",
+    "displayName": "VS Code Keymap",
+    "description": "VS Code keyboard shortcuts for FiveLeaf on macOS, Windows and Linux.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#keymap-vscode",
+    "tags": [
+      "keymap"
+    ]
+  },
+  {
+    "name": "lsp-vue",
+    "displayName": "Vue Language Server",
+    "description": "Vue support through @vue/language-server 2.2.12 in standalone mode. Install the server and workspace TypeScript, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-vue",
+    "tags": [
+      "lsp",
+      "language"
+    ]
+  },
+  {
     "name": "witchs-brew",
     "displayName": "Witch's Brew",
     "description": "Plum dark, with slime green. Dark color theme.",
@@ -167,6 +556,27 @@
     "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#witchs-brew",
     "tags": [
       "themes"
+    ]
+  },
+  {
+    "name": "word-count",
+    "displayName": "Word Count",
+    "description": "The words of a Markdown or text file and the time to read them, in the status bar",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#word-count",
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "name": "lsp-yaml",
+    "displayName": "YAML Language Server",
+    "description": "Language support through yaml-language-server. Install the server on the workspace machine, then enable this plugin.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#lsp-yaml",
+    "tags": [
+      "lsp",
+      "language"
     ]
   }
 ]

@@ -1,0 +1,41 @@
+{
+  "name": "lsp-toml",
+  "displayName": "TOML Language Server",
+  "version": "1.0.0",
+  "description": "Language support through taplo. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "taplo", "description": "Taplo executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "toml",
+        "extensions": [
+          ".toml"
+        ],
+        "filenames": [
+          "Cargo.lock",
+          "poetry.lock",
+          "uv.lock",
+          "Pipfile"
+        ],
+        "lexer": "toml",
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-toml.server",
+        "languages": [
+          "toml"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "lsp",
+          "stdio"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "lsp-csharp",
+  "displayName": "C# Language Server",
+  "version": "1.0.0",
+  "description": "Language support through csharp-ls. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "csharp-ls", "description": "C# server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "csharp",
+        "extensions": [
+          ".cs",
+          ".csx"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-csharp.server",
+        "languages": [
+          "csharp"
+        ],
+        "command": "${settings.command}"
+      }
+    ]
+  }
+}

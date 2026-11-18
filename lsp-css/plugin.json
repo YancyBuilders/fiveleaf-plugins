@@ -1,0 +1,51 @@
+{
+  "name": "lsp-css",
+  "displayName": "CSS / SCSS / Less Language Server",
+  "version": "1.0.0",
+  "description": "Language support through vscode-css-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "vscode-css-language-server", "description": "CSS server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "css",
+        "extensions": [
+          ".css"
+        ]
+      },
+      {
+        "id": "scss",
+        "extensions": [
+          ".scss"
+        ],
+        "lineComment": "//"
+      },
+      {
+        "id": "less",
+        "extensions": [
+          ".less"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-css.server",
+        "languages": [
+          "css",
+          "scss",
+          "less"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ],
+        "initializationOptions": {
+          "provideFormatter": true
+        }
+      }
+    ]
+  }
+}

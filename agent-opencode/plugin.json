@@ -1,0 +1,23 @@
+{
+  "name": "agent-opencode",
+  "displayName": "OpenCode Agent",
+  "version": "1.0.0",
+  "description": "Chat with OpenCode through ACP. Requires an installed OpenCode CLI on PATH. Run opencode to connect a provider and choose a model before connecting.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-opencode.acp",
+        "name": "OpenCode",
+        "command": "opencode",
+        "args": [
+          "acp"
+        ],
+        "capabilities": [
+          "code",
+          "reasoning"
+        ]
+      }
+    ]
+  }
+}

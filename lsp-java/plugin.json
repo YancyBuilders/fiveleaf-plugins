@@ -1,0 +1,30 @@
+{
+  "name": "lsp-java",
+  "displayName": "Java Language Server",
+  "version": "1.0.0",
+  "description": "Language support through jdtls. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "jdtls", "description": "JDT LS launcher on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "java",
+        "extensions": [
+          ".java"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-java.server",
+        "languages": [
+          "java"
+        ],
+        "command": "${settings.command}"
+      }
+    ]
+  }
+}

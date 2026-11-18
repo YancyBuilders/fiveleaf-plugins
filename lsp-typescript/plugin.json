@@ -1,0 +1,66 @@
+{
+  "name": "lsp-typescript",
+  "displayName": "TypeScript / JavaScript Language Server",
+  "version": "1.0.0",
+  "description": "Language support through typescript-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "typescript-language-server", "description": "Server executable on the workspace machine, for example ./node_modules/.bin/typescript-language-server" },
+      "logLevel": { "type": "integer", "minimum": 1, "maximum": 4, "default": 2, "description": "Server log detail from 1 (errors) to 4 (verbose)" }
+    },
+    "languages": [
+      {
+        "id": "typescript",
+        "extensions": [
+          ".ts",
+          ".mts",
+          ".cts"
+        ],
+        "lineComment": "//"
+      },
+      {
+        "id": "typescriptreact",
+        "extensions": [
+          ".tsx"
+        ],
+        "lineComment": "//"
+      },
+      {
+        "id": "javascript",
+        "extensions": [
+          ".js",
+          ".mjs",
+          ".cjs"
+        ],
+        "lineComment": "//"
+      },
+      {
+        "id": "javascriptreact",
+        "extensions": [
+          ".jsx"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-typescript.server",
+        "languages": [
+          "typescript",
+          "typescriptreact",
+          "javascript",
+          "javascriptreact"
+        ],
+        "command": "${settings.command}",
+        "settingArgs": { "logLevel": "--log-level=${value}" },
+        "args": [
+          "--stdio"
+        ],
+        "initializationOptions": {
+          "tsserver": { "useSyntaxServer": "never" }
+        }
+      }
+    ]
+  }
+}

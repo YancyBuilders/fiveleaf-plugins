@@ -1,0 +1,43 @@
+{
+  "name": "lsp-terraform",
+  "displayName": "Terraform Language Server",
+  "version": "1.0.0",
+  "description": "Language support through terraform-ls. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "terraform-ls", "description": "Terraform server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "terraform",
+        "extensions": [
+          ".tf"
+        ],
+        "lexer": "terraform",
+        "lineComment": "#"
+      },
+      {
+        "id": "terraform-vars",
+        "extensions": [
+          ".tfvars"
+        ],
+        "lexer": "terraform",
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-terraform.server",
+        "languages": [
+          "terraform",
+          "terraform-vars"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "serve"
+        ]
+      }
+    ]
+  }
+}

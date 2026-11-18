@@ -1,0 +1,49 @@
+{
+  "name": "lsp-clangd",
+  "displayName": "C / C++ Language Server",
+  "version": "1.0.0",
+  "description": "Language support through clangd. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "clangd", "description": "clangd executable on the workspace machine" },
+      "compileCommandsDir": { "type": "string", "description": "Directory containing compile_commands.json. Leave empty for clangd to find it." },
+      "headerInsertion": { "type": "string", "enum": ["iwyu", "never"], "description": "Let clangd insert the owning header when accepting a completion (iwyu), or disable insertion (never)." }
+    },
+    "languages": [
+      {
+        "id": "c",
+        "extensions": [
+          ".c",
+          ".h"
+        ],
+        "lineComment": "//"
+      },
+      {
+        "id": "cpp",
+        "extensions": [
+          ".cc",
+          ".cpp",
+          ".cxx",
+          ".c++",
+          ".hh",
+          ".hpp",
+          ".hxx",
+          ".h++"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-clangd.server",
+        "languages": [
+          "c",
+          "cpp"
+        ],
+        "command": "${settings.command}",
+        "settingArgs": { "compileCommandsDir": "--compile-commands-dir=${value}", "headerInsertion": "--header-insertion=${value}" }
+      }
+    ]
+  }
+}

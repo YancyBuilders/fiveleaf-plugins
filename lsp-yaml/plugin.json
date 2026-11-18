@@ -1,0 +1,34 @@
+{
+  "name": "lsp-yaml",
+  "displayName": "YAML Language Server",
+  "version": "1.0.0",
+  "description": "Language support through yaml-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "yaml-language-server", "description": "YAML server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "yaml",
+        "extensions": [
+          ".yaml",
+          ".yml"
+        ],
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-yaml.server",
+        "languages": [
+          "yaml"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ]
+      }
+    ]
+  }
+}

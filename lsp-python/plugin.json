@@ -1,0 +1,35 @@
+{
+  "name": "lsp-python",
+  "displayName": "Python Language Server",
+  "version": "1.0.0",
+  "description": "Language support through pyright-langserver. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "pyright-langserver", "description": "Pyright server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "python",
+        "extensions": [
+          ".py",
+          ".pyi",
+          ".pyw"
+        ],
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-python.server",
+        "languages": [
+          "python"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ]
+      }
+    ]
+  }
+}

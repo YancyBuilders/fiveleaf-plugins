@@ -1,0 +1,33 @@
+{
+  "name": "lsp-svelte",
+  "displayName": "Svelte Language Server",
+  "version": "1.0.0",
+  "description": "Language support through svelteserver. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "svelteserver", "description": "Svelte server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "svelte",
+        "extensions": [
+          ".svelte"
+        ],
+        "lexer": "html"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-svelte.server",
+        "languages": [
+          "svelte"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ]
+      }
+    ]
+  }
+}

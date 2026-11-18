@@ -1,0 +1,30 @@
+{
+  "name": "lsp-rust",
+  "displayName": "Rust Language Server",
+  "version": "1.0.0",
+  "description": "Language support through rust-analyzer. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "rust-analyzer", "description": "rust-analyzer executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "rust",
+        "extensions": [
+          ".rs"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-rust.server",
+        "languages": [
+          "rust"
+        ],
+        "command": "${settings.command}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "lsp-lua",
+  "displayName": "Lua Language Server",
+  "version": "1.0.0",
+  "description": "Language support through lua-language-server. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "lua-language-server", "description": "Lua server executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "lua",
+        "extensions": [
+          ".lua"
+        ],
+        "lineComment": "--"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-lua.server",
+        "languages": [
+          "lua"
+        ],
+        "command": "${settings.command}"
+      }
+    ]
+  }
+}

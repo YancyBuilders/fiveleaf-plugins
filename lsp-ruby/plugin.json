@@ -1,0 +1,37 @@
+{
+  "name": "lsp-ruby",
+  "displayName": "Ruby Language Server",
+  "version": "1.0.0",
+  "description": "Language support through ruby-lsp. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "ruby-lsp", "description": "Ruby LSP executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "ruby",
+        "extensions": [
+          ".rb",
+          ".rake",
+          ".gemspec"
+        ],
+        "filenames": [
+          "Gemfile",
+          "Rakefile",
+          "Brewfile"
+        ],
+        "lineComment": "#"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-ruby.server",
+        "languages": [
+          "ruby"
+        ],
+        "command": "${settings.command}"
+      }
+    ]
+  }
+}

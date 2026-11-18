@@ -1,0 +1,36 @@
+{
+  "name": "lsp-markdown",
+  "displayName": "Markdown Language Server",
+  "version": "1.0.0",
+  "description": "Language support through marksman. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "marksman", "description": "Marksman executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "markdown",
+        "extensions": [
+          ".md",
+          ".markdown",
+          ".mdown",
+          ".mkd",
+          ".mkdn"
+        ]
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-markdown.server",
+        "languages": [
+          "markdown"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "server"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "agent-codex",
+  "displayName": "Codex Agent",
+  "version": "1.1.0",
+  "description": "Chat with Codex through ACP. Install Node.js and the Codex CLI, then sign in with Codex. The first connection downloads the adapter.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-codex.acp",
+        "name": "Codex",
+        "command": "npx",
+        "localCommand": "codex",
+        "localCommandEnv": "CODEX_PATH",
+        "args": [
+          "-y",
+          "@agentclientprotocol/codex-acp@2.7.0"
+        ],
+        "capabilities": [
+          "code",
+          "reasoning"
+        ]
+      }
+    ]
+  }
+}

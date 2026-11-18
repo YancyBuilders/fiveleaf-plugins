@@ -1,0 +1,164 @@
+{
+  "name": "keymap-jetbrains",
+  "displayName": "JetBrains Keymap",
+  "version": "1.0.0",
+  "description": "JetBrains keyboard shortcuts for FiveLeaf on macOS, Windows and Linux.",
+  "enabled": true,
+  "contributes": {
+    "keymaps": [
+      {
+        "id": "keymap-jetbrains.preset",
+        "label": "JetBrains",
+        "bindings": [
+          {
+            "key": "ctrl+shift+n",
+            "mac": "cmd+shift+o",
+            "command": "go.quickOpen"
+          },
+          {
+            "key": "ctrl+shift+a",
+            "mac": "cmd+shift+a",
+            "command": "go.commands"
+          },
+          {
+            "key": "ctrl+alt+s",
+            "mac": "cmd+,",
+            "command": "file.settings"
+          },
+          {
+            "key": "ctrl+s",
+            "mac": "cmd+s",
+            "command": "file.saveAll"
+          },
+          {
+            "key": "ctrl+f4",
+            "mac": "cmd+w",
+            "command": "file.close"
+          },
+          {
+            "key": "ctrl+g",
+            "mac": "cmd+l",
+            "command": "go.line",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+f12",
+            "mac": "cmd+f12",
+            "command": "go.symbol",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+b",
+            "mac": "cmd+b",
+            "command": "go.definition",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+q",
+            "mac": "f1",
+            "command": "go.hover",
+            "when": "editorFocus"
+          },
+          {
+            "key": "ctrl+f",
+            "mac": "cmd+f",
+            "command": "edit.find"
+          },
+          {
+            "key": "ctrl+r",
+            "mac": "cmd+r",
+            "command": "edit.replace",
+            "when": "!terminalFocus"
+          },
+          {
+            "key": "f3",
+            "mac": "cmd+g",
+            "command": "edit.findNext"
+          },
+          {
+            "key": "shift+f3",
+            "mac": "cmd+shift+g",
+            "command": "edit.findPrev"
+          },
+          {
+            "key": "ctrl+shift+f",
+            "mac": "cmd+shift+f",
+            "command": "edit.findInFiles"
+          },
+          {
+            "key": "ctrl+shift+r",
+            "mac": "cmd+shift+r",
+            "command": "edit.replaceInFiles"
+          },
+          {
+            "key": "ctrl+/",
+            "mac": "cmd+/",
+            "command": "sel.comment",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+d",
+            "mac": "cmd+d",
+            "command": "sel.copyDown",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+y",
+            "mac": "cmd+backspace",
+            "command": "sel.deleteLine",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+alt+up",
+            "command": "sel.moveUp",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+alt+down",
+            "command": "sel.moveDown",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+shift+j",
+            "command": "sel.joinLines",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "shift+enter",
+            "command": "sel.lineBelow",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+alt+enter",
+            "mac": "cmd+alt+enter",
+            "command": "sel.lineAbove",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "ctrl+alt+l",
+            "mac": "cmd+alt+l",
+            "command": "sel.format",
+            "when": "editorTextFocus"
+          },
+          {
+            "key": "alt+1",
+            "mac": "cmd+1",
+            "command": "view.explorer"
+          },
+          {
+            "key": "alt+f12",
+            "command": "view.terminal"
+          },
+          {
+            "key": "ctrl+tab",
+            "command": "go.nextTab"
+          },
+          {
+            "key": "ctrl+shift+tab",
+            "command": "go.prevTab"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "agent-gemini",
+  "displayName": "Gemini CLI Agent",
+  "version": "1.1.0",
+  "description": "Connect the installed Gemini CLI to FiveLeaf over ACP. Sign in and configure a model in Gemini before opening a chat.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-gemini.acp",
+        "name": "Gemini CLI",
+        "command": "gemini",
+        "args": [
+          "--acp"
+        ],
+        "capabilities": [
+          "code",
+          "reasoning",
+          "search"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "lsp-php",
+  "displayName": "PHP Language Server",
+  "version": "1.0.0",
+  "description": "Language support through intelephense. Install the server on the workspace machine, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "settings": {
+      "command": { "type": "string", "default": "intelephense", "description": "Intelephense executable on the workspace machine" }
+    },
+    "languages": [
+      {
+        "id": "php",
+        "extensions": [
+          ".php",
+          ".phtml"
+        ],
+        "lineComment": "//"
+      }
+    ],
+    "languageServers": [
+      {
+        "id": "lsp-php.server",
+        "languages": [
+          "php"
+        ],
+        "command": "${settings.command}",
+        "args": [
+          "--stdio"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "format-prettier",
+  "displayName": "Prettier Formatter",
+  "version": "1.0.0",
+  "description": "Format JavaScript, TypeScript, JSX, TSX, Vue, styles, HTML, JSON, YAML and Markdown with Prettier on the workspace machine.",
+  "enabled": false,
+  "contributes": {
+    "languages": [
+      { "id": "typescript", "extensions": [".ts", ".mts", ".cts"], "lineComment": "//" },
+      { "id": "typescriptreact", "extensions": [".tsx"], "lineComment": "//" },
+      { "id": "javascript", "extensions": [".js", ".mjs", ".cjs"], "lineComment": "//" },
+      { "id": "javascriptreact", "extensions": [".jsx"], "lineComment": "//" },
+      { "id": "vue", "extensions": [".vue"] },
+      { "id": "html", "extensions": [".html", ".htm"] },
+      { "id": "css", "extensions": [".css"] },
+      { "id": "scss", "extensions": [".scss"], "lineComment": "//" },
+      { "id": "less", "extensions": [".less"], "lineComment": "//" },
+      { "id": "jsonc", "extensions": [".jsonc", ".code-workspace"], "filenames": ["tsconfig.json", "jsconfig.json"], "lexer": "json", "lineComment": "//" },
+      { "id": "json", "extensions": [".json"], "filenames": [".babelrc", ".prettierrc", ".eslintrc"], "lexer": "json" },
+      { "id": "yaml", "extensions": [".yaml", ".yml"], "lineComment": "#" },
+      { "id": "markdown", "extensions": [".md", ".markdown", ".mdown", ".mkd", ".mkdn"] }
+    ],
+    "settings": {
+      "command": { "type": "string", "default": "prettier", "description": "Prettier executable on the workspace machine, for example ./node_modules/.bin/prettier" },
+      "printWidth": { "type": "integer", "minimum": 1, "default": 80, "description": "Preferred line width when the file has no Prettier configuration" },
+      "singleQuote": { "type": "boolean", "default": false, "description": "Prefer single quotes in JavaScript and TypeScript when the file has no Prettier configuration" },
+      "semi": { "type": "boolean", "default": true, "description": "End statements with semicolons when the file has no Prettier configuration" }
+    },
+    "formatters": [{
+      "id": "format-prettier.format",
+      "languages": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "html", "css", "scss", "less", "json", "jsonc", "yaml", "markdown"],
+      "command": "${settings.command}",
+      "args": ["--config-precedence", "prefer-file", "--tab-width", "${tabSize}", "--use-tabs=${useTabs}", "--stdin-filepath", "${file}"],
+      "settingArgs": { "printWidth": "--print-width=${value}", "singleQuote": "--single-quote=${value}", "semi": "--semi=${value}" }
+    }]
+  }
+}

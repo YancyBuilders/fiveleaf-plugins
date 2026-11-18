@@ -1,0 +1,20 @@
+{
+  "name": "agent-dsh",
+  "displayName": "DeepSeek TUI (DSH) Agent",
+  "version": "1.0.0",
+  "description": "Use the ACP profile of the installed DSH CLI. Configure its model and provider before starting a chat.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-dsh.acp",
+        "name": "DSH",
+        "command": "dsh",
+        "args": [
+          "--profile",
+          "acp"
+        ]
+      }
+    ]
+  }
+}

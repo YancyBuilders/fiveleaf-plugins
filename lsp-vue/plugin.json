@@ -1,0 +1,44 @@
+{
+  "name": "lsp-vue",
+  "displayName": "Vue Language Server",
+  "version": "1.0.0",
+  "description": "Vue support through @vue/language-server 2.2.12 in standalone mode. Install the server and workspace TypeScript, then enable this plugin.",
+  "enabled": false,
+  "contributes": {
+    "languages": [
+      {
+        "id": "vue",
+        "extensions": [
+          ".vue"
+        ]
+      }
+    ],
+    "settings": {
+      "command": {
+        "type": "string",
+        "default": "vue-language-server",
+        "description": "The Vue 2.2.12 language server command or absolute path on the workspace machine"
+      },
+      "tsdkPath": {
+        "type": "string",
+        "default": "",
+        "description": "The TypeScript lib folder on the workspace machine; empty finds workspace TypeScript"
+      }
+    },
+    "languageServers": [
+      {
+        "id": "lsp-vue.server",
+        "languages": [
+          "vue"
+        ],
+        "resolve": {
+          "command": "node",
+          "args": [
+            "-e",
+            "const fs=require(\"node:fs\"),path=require(\"node:path\");const p=JSON.parse(fs.readFileSync(0,\"utf8\"));const settings=p.settings||{};let tsdk=settings.tsdkPath;try{tsdk=tsdk?path.resolve(p.root,tsdk):path.dirname(require.resolve(\"typescript\",{paths:[p.root]}));}catch(e){console.error(\"Vue needs TypeScript in this workspace: npm install -D typescript, or set plugins.lsp-vue.tsdkPath to its lib folder.\");process.exit(1);}process.stdout.write(JSON.stringify({command:settings.command||\"vue-language-server\",args:[\"--stdio\"],initializationOptions:{typescript:{tsdk},vue:{hybridMode:false}}}));"
+          ]
+        }
+      }
+    ]
+  }
+}

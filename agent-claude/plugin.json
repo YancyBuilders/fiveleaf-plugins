@@ -1,0 +1,26 @@
+{
+  "name": "agent-claude",
+  "displayName": "Claude Agent",
+  "version": "1.0.0",
+  "description": "Chat with Claude Code through ACP. Install Node.js and the Claude Code CLI, then sign in with Claude Code. The first connection downloads the adapter.",
+  "enabled": false,
+  "contributes": {
+    "agentServers": [
+      {
+        "id": "agent-claude.acp",
+        "name": "Claude Code",
+        "command": "npx",
+        "localCommand": "claude",
+        "args": [
+          "-y",
+          "@agentclientprotocol/claude-agent-acp@0.107.0"
+        ],
+        "capabilities": [
+          "code",
+          "reasoning",
+          "search"
+        ]
+      }
+    ]
+  }
+}
