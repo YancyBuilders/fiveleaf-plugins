@@ -1,0 +1,17 @@
+{
+  "name": "fiveleaf-icons",
+  "displayName": "FiveLeaf File Icons",
+  "version": "1.0.0",
+  "description": "File and folder icons in the FiveLeaf, Catppuccin Latte and Mocha, Material, Seti, and Ayu styles.",
+  "enabled": true,
+  "contributes": {
+    "iconThemes": [
+      { "id": "fiveleaf-icons.fiveleaf", "label": "FiveLeaf", "path": "themes/fiveleaf/theme.json" },
+      { "id": "fiveleaf-icons.catppuccin-latte", "label": "Catppuccin Latte", "path": "themes/catppuccin-latte/theme.json" },
+      { "id": "fiveleaf-icons.catppuccin-mocha", "label": "Catppuccin Mocha", "path": "themes/catppuccin-mocha/theme.json" },
+      { "id": "fiveleaf-icons.material", "label": "Material Icon Theme", "path": "themes/material/theme.json" },
+      { "id": "fiveleaf-icons.seti", "label": "Seti", "path": "themes/seti/theme.json" },
+      { "id": "fiveleaf-icons.ayu", "label": "Ayu", "path": "themes/ayu/theme.json" }
+    ]
+  }
+}

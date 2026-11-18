@@ -1,0 +1,18 @@
+[
+  {
+    "name": "fiveleaf-themes",
+    "displayName": "FiveLeaf Themes",
+    "description": "Color themes for the workbench, syntax highlighting and terminal, including One Dark Pro and Ayu.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#fiveleaf-themes",
+    "tags": ["themes"]
+  },
+  {
+    "name": "fiveleaf-icons",
+    "displayName": "FiveLeaf File Icons",
+    "description": "File and folder icons in the FiveLeaf, Catppuccin Latte and Mocha, Material, Seti, and Ayu styles.",
+    "author": "YancyBuilders",
+    "repository": "https://github.com/YancyBuilders/fiveleaf-plugins.git#fiveleaf-icons",
+    "tags": ["icon-themes"]
+  }
+]
